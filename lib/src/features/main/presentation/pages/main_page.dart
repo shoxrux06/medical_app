@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_app/src/core/constants/app_assets.dart';
@@ -44,11 +43,11 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:_selectedIndex == 3? _widgetOptions[0]:_widgetOptions[_selectedIndex] ,
-      bottomNavigationBar: Container(
-        decoration: const BoxDecoration(boxShadow: [
-          BoxShadow(
-              color: Color(0xFF252525), blurRadius: 20, offset: Offset(0, 0))
-        ]),
+      bottomNavigationBar: SizedBox(
+        // decoration: const BoxDecoration(boxShadow: [
+        //   BoxShadow(
+        //       color: Color(0xFF252525), blurRadius: 20, offset: Offset(0, 0))
+        // ]),
         height: 85.h,
         child: BottomNavigationBar(
           backgroundColor: AppColors.white,
